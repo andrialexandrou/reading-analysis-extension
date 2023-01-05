@@ -10,7 +10,10 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:reading-analysis-extension.helloWorld"
+    "onCommand:reading-analysis-extension.helloWorld",
+    "onLanguage:markdown",
+    "onLanguage:plaintext",
+    "onDebug"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -19,7 +22,24 @@
         "command": "reading-analysis-extension.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "reading-analysis",
+          "title": "Reading Analysis",
+          "icon": "images/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "reading-analysis": [
+        {
+          "id": "reading-analysis-view",
+          "name": "Reading Analysis"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
