@@ -68,4 +68,14 @@ You can author your README using Visual Studio Code. Here are some useful editor
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+## Develop
+
+```shell
+npm run watch
+```
+
+In your editor, press `F5` and re-run to re-activate.
+
+To launch the console of the extension, press `Ctrl+Shift+P` and type `Developer: Toggle Developer Tools`.
+
+Analysis only runs on extension load at this point in time.
